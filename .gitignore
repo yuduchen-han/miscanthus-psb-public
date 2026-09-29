@@ -1,0 +1,98 @@
+cat > .gitignore <<'EOF'
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# R / RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# Quarto
+.quarto/
+_freeze/
+_site/
+_book/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+.cache/
+tmp/
+temp/
+
+# Large sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.cram
+*.crai
+
+# Large variant / PLINK files
+*.bcf
+*.bcf.gz
+*.bed
+*.bim
+*.fam
+*.pgen
+*.pvar
+*.psam
+
+# Large/reference genomic files
+*.fa
+*.fasta
+*.fna
+*.fa.gz
+*.fasta.gz
+*.fna.gz
+*.gff
+*.gff3
+*.gff.gz
+*.gff3.gz
+
+# Stacks / intermediate analysis data
+*.catalog.*
+*.matches.*
+*.tags.*
+*.snps.*
+*.alleles.*
+
+# LEA / sNMF generated projects
+*.snmfProject
+*.lfmmProject
+*.geno
+*.snp
+*.ancestry
+*.project
+
+# Generated analysis outputs
+04_Results_Archive/
+00_rds_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Misc
+Thumbs.db
+EOF
+.Rapp.history
